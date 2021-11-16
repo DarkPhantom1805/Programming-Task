@@ -3,7 +3,7 @@ DECLARE input : String
 PRINT "Enter String: "
 input <=== INPUT
 
-If Len(input) <= 2 Then
+If LENGTH(input) <= 2 Then
     PRINT "" 
     PRINT input
 Else
