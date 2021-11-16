@@ -4,7 +4,7 @@ DECLARE input : String
 DECLARE inputChar : Character
 
 PRINT "Enter string: "
-input <=== UpperCase(INPUT)
+input <=== UCase(INPUT)
 
 For count <=== 1 To Len(input)
     inputChar <=== Mid(input, count, 1)
