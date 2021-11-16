@@ -1,8 +1,8 @@
-    DECLARE input : String
-    DECLARE char1, highChar : Character
-    DECLARE maxCount : Integer
+DECLARE input : String
+DECLARE char1, highChar : Character
+DECLARE maxCount : Integer
 
-PRINT("Enter String: ")
+PRINT "Enter String: " 
 Input <=== INPUT       
 
 DECLARE highCount(Len(Input)) : Integer
@@ -23,4 +23,4 @@ For count <=== 1 To Len(Input)
     End If
 Next
 
-PRINT("The character that appears the most is: '" & highChar & "' and it appears: '" & maxCount & "' times.")
+PRINT "The character that appears the most is: '" , highChar , "' and it appears: '" , maxCount , "' times."
