@@ -1,0 +1,12 @@
+DECLARE input : String 
+
+PRINT "Enter String: "
+input <=== INPUT
+
+If LENGTH(input) <= 2 Then
+    PRINT "" 
+    PRINT input
+Else
+    PRINT ""
+    PRINT Left(input, 2) , Right(input, 2)
+End If
