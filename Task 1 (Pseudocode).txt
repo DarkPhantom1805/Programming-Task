@@ -1,9 +1,9 @@
-DECLARE check(25) : Boolean
-DECLARE alphabet() : String <=== {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"}
+DECLARE check[25] : Boolean
+DECLARE alphabet[] : String <=== {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"}
 DECLARE input : String
 DECLARE inputChar : Character
 
-PRINT("Enter string: ")
+PRINT "Enter string: "
 input <=== UpperCase(INPUT)
 
 For count <=== 1 To Len(input)
@@ -17,10 +17,10 @@ Next
 
 For count <=== 0 To 25
     If check(count) = False Then
-        PRINT("This String is not a Pangram.")
+        PRINT "This String is not a Pangram."
         END
     End If
 Next
 
-PRINT("This String is a Pangram.")
+PRINT "This String is a Pangram."
 
