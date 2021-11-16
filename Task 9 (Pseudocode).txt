@@ -18,4 +18,4 @@ firstSwap(1) <=== Left(input1, 2)
 firstSwap(2) <=== Left(input2, 2)
 
 PRINT ""
-PRINT firstSwap(2) , Mid(input1, 3, Len(input1)) , " " , firstSwap(1) , Mid(input2, 3, Len(input2))
+PRINT firstSwap(2) , Mid(input1, 3, LENGTH(input1)) , " " , firstSwap(1) , Mid(input2, 3, LENGTH(input2))
