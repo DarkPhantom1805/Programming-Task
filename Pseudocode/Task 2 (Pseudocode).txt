@@ -1,0 +1,48 @@
+DECLARE input, newString : String
+DECLARE count, charIndex : Integer
+DECLARE newChar : Character
+
+count <=== 1
+newString <=== ""
+
+PRINT "Enter String: "
+input <=== INPUT
+
+PRINT ""
+PRINT "                 Index: 123..." 
+PRINT "The String you entered: " & input 
+
+PRINT "" 
+PRINT "Enter index of the Character you want to replace [Index starts at '1' from the Left]: " 
+charIndex <=== INPUT
+
+PRINT "" 
+PRINT "What do you want to replace '" , Mid(input, charIndex, 1) , "' at Index " , charIndex , " with?: " 
+newChar <=== INPUT
+
+PRINT "" 
+
+Repeat
+    If charIndex = 1 Then
+
+        newString <=== newString + newChar
+        charIndex <=== 0
+        count <=== count + 1
+
+    else If count = charIndex Then
+
+        newString <=== newString + newChar
+        count <=== count + 1
+        If count = (LENGTH(input) + 1) Then
+            Exit Loop
+        End If
+
+    End If
+
+    newString <=== newString + Mid(input, count, 1)
+    count <=== count + 1
+
+Until count = (LENGTH(input) + 1)
+
+
+PRINT "New String: ", newString 
