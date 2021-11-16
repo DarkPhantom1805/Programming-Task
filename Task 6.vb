@@ -4,11 +4,12 @@ Module Module1
         Console.WriteLine("Enter the number of Donuts you want: ")
         Dim donutCount As Integer = Console.ReadLine()
 
-        If donutCount < 10 Then
-            Console.WriteLine("Number of donuts: " & donutCount)
-        Else
-            Console.WriteLine("Number of donuts: Many")
-        End If
+        Select Case donutCount
+            Case Is < 10
+                Console.WriteLine("Number of donuts: " & donutCount)
+            Case Else
+                Console.WriteLine("Number of donuts: Many")
+        End Select
 
         Console.ReadKey()
     End Sub
