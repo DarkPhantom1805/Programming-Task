@@ -1,0 +1,47 @@
+        DECLARE input, newString, newChar : String
+        DECLARE count, charIndex : Integer
+
+        count <--- 1
+        newString <--- ""
+
+        PRINT("Enter String: ")
+        input <--- INPUT
+
+        PRINT("")
+        PRINT("                 Index: 123...")
+        PRINT("The String you entered: " & input)
+
+        PRINT("")
+        PRINT("Enter index of the Character you want to replace [Index starts at '1' from the Left]: ")
+        charIndex <--- INPUT
+
+        PRINT("")
+        PRINT("What do you want to replace '" & Mid(input, charIndex, 1) & "' at Index " & charIndex & " with?: ")
+        newChar <--- INPUT
+
+        PRINT("")
+
+        Do
+            If charIndex = 1 Then
+                newString <--- newString + newChar
+                charIndex <--- 0
+                count <--- count + 1
+
+            else If count = charIndex Then
+                newString <--- newString + newChar
+                count <--- count + 1
+
+                If count <--- (Len(input) + 1) Then
+                    Exit Do
+                End If
+
+            End If
+
+            newString <--- newString + Mid(input, count, 1)
+            count <--- count + 1
+
+        Loop Until count = (Len(input) + 1)
+
+
+        PRINT("New String: ")
+        PRINT(newString)
