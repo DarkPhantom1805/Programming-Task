@@ -13,7 +13,7 @@ For count <=== 1 To LENGTH(input)
         lostCharCount <===  lostCharCount + 1
         position <=== position + Str(count)
     End If
-Next
+Next count
 
 PRINT "" 
 
@@ -29,7 +29,7 @@ For count <=== 1 To LENGTH(input)
     If IsNumeric(inputChar) = True Then
         numCount <=== numCount + 1
     End If
-Next
+Next count
 
 PRINT ""
 PRINT "Upper Case Character Count = " , upperCharCount
