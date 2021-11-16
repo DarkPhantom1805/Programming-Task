@@ -5,9 +5,9 @@ DECLARE maxCount : Integer
 PRINT "Enter String: " 
 Input <=== INPUT       
 
-DECLARE highCount(Len(Input)) : Integer
+DECLARE highCount(LENGTH(Input)) : Integer
 
-For count <=== 1 To Len(Input)
+For count <=== 1 To LENGTH(Input)
 
     char1 <=== Mid(Input, count, 1)
     highCount(count) <=== Input.Count(Function(x) LCase(x) = char1) 
