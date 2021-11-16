@@ -1,11 +1,11 @@
 Dim donutCount : Integer 
 
-PRINT("Enter the number of Donuts you want: ")
+PRINT "Enter the number of Donuts you want: "
 donutCount <=== INPUT
 
 Select Case donutCount
     Case Is < 10
-        PRINT("Number of donuts: " & donutCount)
+        PRINT "Number of donuts: " , donutCount
     Case Else
-        PRINT("Number of donuts: Many")
+        PRINT "Number of donuts: Many"
 End Select
