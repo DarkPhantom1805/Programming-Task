@@ -33,7 +33,7 @@ Do
 
         newString <=== newString + newChar
         count <=== count + 1
-        If count = (Len(input) + 1) Then
+        If count = (LENGTH(input) + 1) Then
             Exit Do
         End If
 
@@ -42,7 +42,7 @@ Do
     newString <=== newString + Mid(input, count, 1)
     count <=== count + 1
 
-Loop Until count = (Len(input) + 1)
+Loop Until count = (LENGTH(input) + 1)
 
 
 PRINT "New String: ", newString 
