@@ -5,22 +5,17 @@ DECLARE alphabet : Character
 PRINT "Enter String: "
 input = UCase(INPUT)
 
-For count <=== 1 To Len(input)
+For count <=== 1 To LENGTH(input)
 
     alphabet <=== Mid(input, count, 1)
 
-    Select Case alphabet
-        Case "A"
-            aCount += 1
-        Case "E"
-            eCount += 1
-        Case "I"
-            iCount += 1
-        Case "O"
-            oCount += 1
-        Case "U"
-            uCount += 1
-    End Select
+    CASE OF alphabet
+        "A": aCount += 1
+        "E" eCount += 1
+        "I" iCount += 1
+        "O" oCount += 1
+        "U" uCount += 1
+    ENDCASE
 
 Next
 
