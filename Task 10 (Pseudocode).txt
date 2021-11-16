@@ -1,12 +1,12 @@
 DECLARE input : String
 
-PRINT("Enter String: ")
+PRINT "Enter String: "
 input <=== INPUT
 
 If Right(input, 3) = "ing" Then
-    Console.WriteLine(input & "ly")
+    PRINT input , "ly"
 ElseIf Len(input) >= 3 Then
-    Console.WriteLine(input & "ing")
+    PRINT input , "ing"
 Else
-    Console.WriteLine(input)
+    PRINT input
 End If
