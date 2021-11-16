@@ -2,7 +2,7 @@ DECLARE aCount, eCount, iCount, oCount, uCount : Integer
 DECLARE input : String 
 DECLARE alphabet : Character
 
-PRINT("Enter String: ")
+PRINT "Enter String: "
 input = UpperCase(INPUT)
 
 For count <=== 1 To Len(input)
@@ -24,9 +24,9 @@ For count <=== 1 To Len(input)
 
 Next
 
-PRINT("")
-PRINT("The Vowel A appeared " & aCount & " times in the String.")
-PRINT("The Vowel E appeared " & eCount & " times in the String.")
-PRINT("The Vowel I appeared " & iCount & " times in the String.")
-PRINT("The Vowel O appeared " & oCount & " times in the String.")
-PRINT("The Vowel U appeared " & uCount & " times in the String.")
+PRINT ""
+PRINT "The Vowel A appeared " , aCount , " times in the String."
+PRINT "The Vowel E appeared " , eCount , " times in the String."
+PRINT "The Vowel I appeared " , iCount , " times in the String."
+PRINT "The Vowel O appeared " , oCount , " times in the String."
+PRINT "The Vowel U appeared " , uCount , " times in the String."
