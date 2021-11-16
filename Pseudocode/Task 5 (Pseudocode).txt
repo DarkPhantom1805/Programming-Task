@@ -1,0 +1,27 @@
+DECLARE aCount, eCount, iCount, oCount, uCount : Integer
+DECLARE input : String 
+DECLARE alphabet : Character
+
+PRINT "Enter String: "
+input = UCase(INPUT)
+
+For count <=== 1 To LENGTH(input)
+
+    alphabet <=== Mid(input, count, 1)
+
+    CASE OF alphabet
+        "A": aCount += 1
+        "E" eCount += 1
+        "I" iCount += 1
+        "O" oCount += 1
+        "U" uCount += 1
+    ENDCASE
+
+Next count
+
+PRINT ""
+PRINT "The Vowel A appeared " , aCount , " times in the String."
+PRINT "The Vowel E appeared " , eCount , " times in the String."
+PRINT "The Vowel I appeared " , iCount , " times in the String."
+PRINT "The Vowel O appeared " , oCount , " times in the String."
+PRINT "The Vowel U appeared " , uCount , " times in the String."
