@@ -2,10 +2,10 @@ Dim lostCharCount, lowerCharCount, upperCharCount, otherCharCount, numCount : In
 Dim position, input : String
 Dim inputChar, lostChar : Character
 
-PRINT("Input String: ")
+PRINT "Input String: "
 input <=== INPUT
 
-PRINT("Which Character's position do you want to find?")
+PRINT "Which Character's position do you want to find?"
 lostChar <=== INPUT
 
 For count <=== 1 To Len(input)
@@ -15,9 +15,9 @@ For count <=== 1 To Len(input)
     End If
 Next
 
-PRINT("")
+PRINT "" 
 
-PRINT("The Character '" & lostChar & "' appears " & lostCharCount & " times at the Index/es: " & position)
+PRINT "The Character '" , lostChar , "' appears " , lostCharCount , " times at the Index/es: " , position
 
 For count <=== 1 To Len(input)
     inputChar <=== Mid(input, count, 1)
@@ -34,8 +34,8 @@ For count <=== 1 To Len(input)
     End If
 Next
 
-PRINT("")
-PRINT("Upper Case Character Count = " & upperCharCount)
-PRINT("Lower Case Character Count = " & lowerCharCount)
-PRINT("Numeric Character Count = " & numCount)
-PRINT("Other / Special Character Count = " & (otherCharCount - numCount))
+PRINT ""
+PRINT "Upper Case Character Count = " , upperCharCount
+PRINT "Lower Case Character Count = " , lowerCharCount
+PRINT "Numeric Character Count = " , numCount)
+PRINT "Other / Special Character Count = " , (otherCharCount - numCount)
