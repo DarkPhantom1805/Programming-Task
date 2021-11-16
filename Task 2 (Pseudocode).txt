@@ -5,22 +5,22 @@ DECLARE newChar : Character
 count <=== 1
 newString <=== ""
 
-PRINT("Enter String: ")
+PRINT "Enter String: "
 input <=== INPUT
 
-PRINT("")
-PRINT("                 Index: 123...")
-PRINT("The String you entered: " & input)
+PRINT ""
+PRINT "                 Index: 123..." 
+PRINT "The String you entered: " & input 
 
-PRINT("")
-PRINT("Enter index of the Character you want to replace [Index starts at '1' from the Left]: ")
+PRINT "" 
+PRINT "Enter index of the Character you want to replace [Index starts at '1' from the Left]: " 
 charIndex <=== INPUT
 
-PRINT("")
-PRINT("What do you want to replace '" & Mid(input, charIndex, 1) & "' at Index " & charIndex & " with?: ")
+PRINT "" 
+PRINT "What do you want to replace '" , Mid(input, charIndex, 1) , "' at Index " , charIndex , " with?: " 
 newChar <=== INPUT
 
-PRINT("")
+PRINT "" 
 
 Do
     If charIndex = 1 Then
@@ -45,5 +45,4 @@ Do
 Loop Until count = (Len(input) + 1)
 
 
-PRINT("New String: ")
-PRINT(newString)
+PRINT "New String: ", newString 
