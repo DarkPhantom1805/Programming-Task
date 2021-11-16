@@ -10,7 +10,7 @@ For count <=== 1 To LENGTH(input)
     If firstChar = Mid(input, count, 1) Then
         Mid(input, count, 1) <=== "*"
     End If
-Next
+Next count
 
 PRINT ""
 PRINT firstChar , Mid(input, 2, LENGTH(input))
