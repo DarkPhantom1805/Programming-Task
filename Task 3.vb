@@ -37,6 +37,7 @@ Module Module1
             End If
         Next
 
+        Console.WriteLine("")
         Console.WriteLine("Upper Case Character Count = " & upperCharCount)
         Console.WriteLine("Lower Case Character Count = " & lowerCharCount)
         Console.WriteLine("Numeric Character Count = " & numCount)
