@@ -1,0 +1,12 @@
+DECLARE input : String
+
+PRINT "Enter String: "
+input <=== INPUT
+
+If Right(input, 3) = "ing" Then
+    PRINT input , "ly"
+ElseIf LENGTH(input) >= 3 Then
+    PRINT input , "ing"
+Else
+    PRINT input
+End If
