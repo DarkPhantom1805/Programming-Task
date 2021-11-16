@@ -1,4 +1,4 @@
-DECLARE firstSwap(2) : String
+DECLARE firstSwap[2] : String
 DECLARE input1, input2 : String 
 
 PRINT("Enter Strings 1 and 2: ")
