@@ -1,0 +1,12 @@
+DECLARE input : String
+
+PRINT("Enter String: ")
+input <=== INPUT
+
+If Right(input, 3) = "ing" Then
+    Console.WriteLine(input & "ly")
+ElseIf Len(input) >= 3 Then
+    Console.WriteLine(input & "ing")
+Else
+    Console.WriteLine(input)
+End If
