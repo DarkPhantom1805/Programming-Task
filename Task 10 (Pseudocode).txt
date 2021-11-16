@@ -5,7 +5,7 @@ input <=== INPUT
 
 If Right(input, 3) = "ing" Then
     PRINT input , "ly"
-ElseIf Len(input) >= 3 Then
+ElseIf LENGTH(input) >= 3 Then
     PRINT input , "ing"
 Else
     PRINT input
