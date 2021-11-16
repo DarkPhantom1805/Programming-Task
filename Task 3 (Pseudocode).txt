@@ -8,7 +8,7 @@ input <=== INPUT
 PRINT "Which Character's position do you want to find?"
 lostChar <=== INPUT
 
-For count <=== 1 To Len(input)
+For count <=== 1 To LENGTH(input)
     If Mid(input, count, 1) = lostChar Then
         lostCharCount <===  lostCharCount + 1
         position <=== position + Str(count)
@@ -19,16 +19,13 @@ PRINT ""
 
 PRINT "The Character '" , lostChar , "' appears " , lostCharCount , " times at the Index/es: " , position
 
-For count <=== 1 To Len(input)
+For count <=== 1 To LENGTH(input)
     inputChar <=== Mid(input, count, 1)
-    Select Case inputChar
-        Case "a" To "z"
-            lowerCharCount <=== lowerCharCount + 1
-        Case "A" To "Z"
-            upperCharCount <=== upperCharCount + 1
-        Case Else
-            otherCharCount <=== otherCharCount + 1
-    End Select
+    CASE OF inputChar
+        "a" To "z": lowerCharCount <=== lowerCharCount + 1
+        "A" To "Z": upperCharCount <=== upperCharCount + 1
+        OTHERWISE: otherCharCount <=== otherCharCount + 1
+    ENDCASE
     If IsNumeric(inputChar) = True Then
         numCount <=== numCount + 1
     End If
