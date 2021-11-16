@@ -17,7 +17,7 @@ For count <=== 1 To LENGTH(input)
         "U" uCount += 1
     ENDCASE
 
-Next
+Next count
 
 PRINT ""
 PRINT "The Vowel A appeared " , aCount , " times in the String."
