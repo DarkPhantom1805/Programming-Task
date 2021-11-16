@@ -21,6 +21,6 @@ For count <=== 1 To LENGTH(Input)
         maxCount <=== highCount(count)
         highChar <=== Mid(Input, count, 1)
     End If
-Next
+Next count
 
 PRINT "The character that appears the most is: '" , highChar , "' and it appears: '" , maxCount , "' times."
