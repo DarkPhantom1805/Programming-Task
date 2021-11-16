@@ -1,7 +1,7 @@
 DECLARE input : String 
 DECLARE firstChar : Char 
 
-PRINT("Enter String: ")
+PRINT "Enter String: "
 input <=== LowerCase(INPUT)
 
 firstChar <=== Left(input, 1)
@@ -12,5 +12,5 @@ For count <=== 1 To Len(input)
     End If
 Next
 
-PRINT()
-PRINT(firstChar & Mid(input, 2, Len(input)))
+PRINT ""
+PRINT firstChar , Mid(input, 2, Len(input))
