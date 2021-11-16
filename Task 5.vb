@@ -24,7 +24,6 @@ Module Module1
         Next
 
         Console.WriteLine("")
-
         Console.WriteLine("The Vowel A appeared " & aCount & " times in the String.")
         Console.WriteLine("The Vowel E appeared " & eCount & " times in the String.")
         Console.WriteLine("The Vowel I appeared " & iCount & " times in the String.")
