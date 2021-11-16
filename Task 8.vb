@@ -2,7 +2,7 @@ Module Module1
 
     Sub Main()
         Console.Write("Enter String: ")
-        Dim input As String = Console.ReadLine()
+        Dim input As String = LCase(Console.ReadLine())
 
         Dim firstChar As Char = Left(input, 1)
 
@@ -11,6 +11,8 @@ Module Module1
                 Mid(input, count, 1) = "*"
             End If
         Next
+
+        Console.WriteLine()
         Console.WriteLine(firstChar & Mid(input, 2, Len(input)))
         Console.ReadKey()
     End Sub
