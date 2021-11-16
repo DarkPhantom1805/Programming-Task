@@ -1,0 +1,25 @@
+        DECLARE check(25) : Boolean
+        DECLARE alphabet() : String <--- {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"}
+        DECLARE input, inputChar : String
+
+        PRINT("Enter string: ")
+        input <--- UpperCase(INPUT)
+
+        For count <--- 1 To Len(input)
+            inputChar <--- Mid(input, count, 1)
+            For count2 <--- 0 To 25
+                If inputChar = alphabet(count2) Then
+                    check(count2) <--- True
+                End If
+            Next
+        Next
+
+        For count <--- 0 To 25
+            If check(count) = False Then
+                PRINT("This String is not a Pangram.")
+                END
+            End If
+        Next
+
+        PRINT("This String is a Pangram.")
+
