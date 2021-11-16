@@ -1,7 +1,7 @@
 Module Module1
 
     Sub Main()
-        Console.WriteLine("Enter String: ")
+        Console.Write("Enter String: ")
         Dim input As String = Console.ReadLine()
 
         If Right(input, 3) = "ing" Then
