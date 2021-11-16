@@ -1,9 +1,0 @@
-Dim donutCount : Integer 
-
-PRINT "Enter the number of Donuts you want: "
-donutCount <=== INPUT
-
-CASE OF donutCount
-    Is < 10: PRINT "Number of donuts: " , donutCount
-    OTHERWISE: PRINT "Number of donuts: Many"
-ENDCASE
