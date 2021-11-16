@@ -1,0 +1,21 @@
+DECLARE firstSwap[2] : String
+DECLARE input1, input2 : String 
+
+PRINT "Enter Strings 1 and 2: "
+
+PRINT "" 
+
+PRINT "String 1: "
+input1 <=== INPUT
+
+PRINT ""
+
+PRINT "String 2: "
+input2 <=== INPUT
+
+
+firstSwap(1) <=== Left(input1, 2)
+firstSwap(2) <=== Left(input2, 2)
+
+PRINT ""
+PRINT firstSwap(2) , Mid(input1, 3, LENGTH(input1)) , " " , firstSwap(1) , Mid(input2, 3, LENGTH(input2))
