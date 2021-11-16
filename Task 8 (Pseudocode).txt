@@ -2,7 +2,7 @@ DECLARE input : String
 DECLARE firstChar : Char 
 
 PRINT "Enter String: "
-input <=== LowerCase(INPUT)
+input <=== LCase(INPUT)
 
 firstChar <=== Left(input, 1)
 
