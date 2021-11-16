@@ -1,9 +1,9 @@
     DECLARE input : String
-DECLARE char1, highChar : Character
+    DECLARE char1, highChar : Character
     DECLARE maxCount : Integer
 
 PRINT("Enter String: ")
-Input = INPUT       
+Input <=== INPUT       
 
 DECLARE highCount(Len(Input)) : Integer
 
