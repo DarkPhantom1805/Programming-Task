@@ -3,7 +3,7 @@ DECLARE input : String
 DECLARE alphabet : Character
 
 PRINT "Enter String: "
-input = UpperCase(INPUT)
+input = UCase(INPUT)
 
 For count <=== 1 To Len(input)
 
