@@ -1,12 +1,12 @@
 DECLARE input : String 
 
-PRINT("Enter String: ")
+PRINT "Enter String: "
 input <=== INPUT
 
 If Len(input) <= 2 Then
-    PRINT("")
-    PRINT(input)
+    PRINT "" 
+    PRINT input
 Else
-    PRINT("")
-    PRINT(Left(input, 2) & Right(input, 2))
+    PRINT ""
+    PRINT Left(input, 2) , Right(input, 2)
 End If
