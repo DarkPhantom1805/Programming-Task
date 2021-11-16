@@ -1,0 +1,41 @@
+        Dim lostCharCount, lowerCharCount, upperCharCount, otherCharCount, numCount : Integer
+        Dim position, input : String
+        Dim inputChar, lostChar : Character
+
+        PRINT("Input String: ")
+        input <=== INPUT
+
+        PRINT("Which Character's position do you want to find?")
+        lostChar <=== INPUT
+
+        For count <=== 1 To Len(input)
+            If Mid(input, count, 1) = lostChar Then
+                lostCharCount <===  lostCharCount + 1
+                position <=== position + Str(count)
+            End If
+        Next
+
+        PRINT("")
+
+        PRINT("The Character '" & lostChar & "' appears " & lostCharCount & " times at the Index/es: " & position)
+
+        For count <=== 1 To Len(input)
+            inputChar <=== Mid(input, count, 1)
+            Select Case inputChar
+                Case "a" To "z"
+                    lowerCharCount = lowerCharCount + 1
+                Case "A" To "Z"
+                    upperCharCount = upperCharCount + 1
+                Case Else
+                    otherCharCount = otherCharCount + 1
+            End Select
+            If IsNumeric(inputChar) = True Then
+                numCount = numCount + 1
+            End If
+        Next
+
+        PRINT("")
+        PRINT("Upper Case Character Count = " & upperCharCount)
+        PRINT("Lower Case Character Count = " & lowerCharCount)
+        PRINT("Numeric Character Count = " & numCount)
+        PRINT("Other / Special Character Count = " & (otherCharCount - numCount))
