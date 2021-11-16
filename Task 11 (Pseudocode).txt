@@ -1,0 +1,14 @@
+DECLARE input : String
+
+print("Enter String: ")
+input <=== LowerCase(INPUT)
+
+For count <=== 1 To Len(input)
+    For count2 <=== 1 To Len(input)
+        If Mid(input, count, 3) = "not" And Mid(input, count2, 3) = "bad" Then
+            input <=== Left(input, (count - 1)) & "good" & Mid(input, (count2 + 3), (Len(input)))
+        End If
+    Next
+Next
+
+PRINT(input)
