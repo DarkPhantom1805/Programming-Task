@@ -6,7 +6,7 @@ DECLARE inputChar : Character
 PRINT "Enter string: "
 input <=== UCase(INPUT)
 
-For count <=== 1 To Len(input)
+For count <=== 1 To LENGTH(input)
     inputChar <=== Mid(input, count, 1)
     For count2 <=== 0 To 25
         If inputChar = alphabet(count2) Then
