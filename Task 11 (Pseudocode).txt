@@ -1,7 +1,7 @@
 DECLARE input : String
 
 PRINT "Enter String: " 
-input <=== LowerCase(INPUT)
+input <=== LCase(INPUT)
 
 For count <=== 1 To Len(input)
     For count2 <=== 1 To Len(input)
