@@ -1,0 +1,27 @@
+DECLARE Input : String 
+DECLARE char1, char2, highChar : Char
+DECLARE maxCount, count, count2 : Integer
+
+PRINT "Enter String: "
+Input = INPUT
+
+DECLARE charCount(len(input)) : Integer
+
+FOR count <=== 1 to len(input)
+    char1 <=== Mid(Input, count, 1)
+    FOR count2 <=== 1 to len(Input)
+        char2 <=== Mid(input, count2, 1)
+        IF char2 = " " then
+        continue FOR
+        ENDIF
+        IF char1 = char2
+            charCount(count2) = charCount(count2) + 1
+            IF charCount(count2) > maxCount Then
+                maxCount <=== charCount(count2)
+                highChar <=== Mid(Input, count, 1)
+            ENDIF
+        ENDIF
+    NEXT count2
+NEXT count
+
+PRINT "The character that appears the most is: '" , highChar , "' and it appears: '" , maxCount , "' times."
