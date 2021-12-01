@@ -19,7 +19,7 @@ Module module1
                     charCount(count2) += 1
                     If charCount(count2) > maxCount Then
                         maxCount = charCount(count2)
-                        highChar = Mid(Input, count, 1)
+                        highChar = char1
                     End If
                 End If
             Next
